@@ -1,16 +1,85 @@
-<!DOCTYPE>
-<html>
-  <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ASRJC ICT Champions</title>
-  </head>
-  <body>
-    <h1>ASRJC ICT Champions</h1>
-    <p>The ASRJC ICT Champions programme is an initiative at Anderson Serangoon Junior College in Singapore, aimed at enhancing digital literacy among students. The programme provides students with opportunities to develop and apply their ICT skills through various activities and projects. ICT Champions act as peer leaders, guiding their schoolmates and participating in events that promote digital literacy skills across the college community. This role helps students gain valuable hard and soft skills as well as leadership abilities through experiential learning and service while contributing to the college's digital initiatives​
-</p>
-    <h2>Learn</h2>
-    <ul>
-      <li>https://www.deeplearning.ai/short-courses/ai-python-for-beginners/</li>
-      <li>https://www.deeplearning.ai/courses/generative-ai-for-everyone/</li>
-    </ul>
-  </body>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'custom-orange': '#FF7F50',
+                        'custom-teal': '#008080',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-100 font-sans">
+    <header class="bg-custom-teal text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-custom-orange">ASRJC ICT Champions</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#" class="hover:text-custom-orange">Home</a></li>
+                    <li><a href="#" class="hover:text-custom-orange">About</a></li>
+                    <li><a href="#" class="hover:text-custom-orange">Learn</a></li>
+                    <li><a href="#" class="hover:text-custom-orange">Serve</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto mt-8 p-4">
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold text-custom-teal mb-4">Good morning!</h2>
+            <p class="text-gray-700">The ASRJC ICT Champions programme is an initiative at Anderson Serangoon Junior College in Singapore, aimed at enhancing digital literacy among students. The programme provides students with opportunities to develop and apply their ICT skills through various activities and projects. ICT Champions act as peer leaders, guiding their schoolmates and participating in events that promote digital literacy skills across the college community. This role helps students gain valuable hard and soft skills as well as leadership abilities through experiential learning and service while contributing to the college's digital initiatives​.</p>
+        </section>
+
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-custom-teal mb-4">Learn</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div class="bg-white p-4 rounded shadow">
+                    <h3 class="text-xl font-semibold text-custom-orange"><a href="https://www.deeplearning.ai/short-courses/ai-python-for-beginners">AI Python for Beginners</a></h3>
+					<p class="text-gray-600">Taught by renowned AI leader Prof Andrew Ng, students will learn how to use Python to interact with large language models, automating tasks and analysing data, while extending Python's capabilities with third-party packages for data analysis, visualisation and API access. These skills are valuable across all industries. Students will build a portfolio of AI-powered applications that solve real-world problems by working on hands-on projects.</p>
+                </div>
+                <div class="bg-white p-4 rounded shadow">
+                    <h3 class="text-xl font-semibold text-custom-orange"><a href="https://www.deeplearning.ai/courses/generative-ai-for-everyone">Generative AI for Everyone</a></h3>
+                    <p class="text-gray-600">This course covers the fundamentals of generative AI, including its capabilities and limitations, with hands-on exercises that teach practical applications for everyday tasks and tips for effective prompt engineering. Students will explore advanced AI uses beyond basic prompting, gain experience with generative AI tools, and understand common real-world applications. The course also provides insights into the broader impact of AI on business and society.</p>
+                </div>
+                <div class="bg-white p-4 rounded shadow">
+                    <h3 class="text-xl font-semibold text-custom-orange"><a href="https://cs50.harvard.edu/x/2024">CS50 Introduction to Computer Science</a></h3>
+                    <p class="text-gray-600">Harvard University's CS50 is an introductory computer science course designed for students with or without programming experience. It focuses on problem solving with an emphasis on correctness, design, and style, covering topics such as computational thinking, abstraction, algorithms, and data structures. The course starts with C to build foundational programming skills and an understanding of how computers work, then progresses to Python, SQL, HTML, CSS, and JavaScript for practical applications, including web and mobile app development. It concludes with a final project that allows students to apply their skills in a creative and computational way.</p>
+                </div>
+            </div>
+        </section>
+		
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-custom-teal mb-4">Serve</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div class="bg-white p-4 rounded shadow">
+                    <h3 class="text-xl font-semibold text-custom-orange">Digital Literacy Outreach</h3>
+					<p class="text-gray-600">We promote digital literacy for good to the school population.</p>
+                </div>
+                <div class="bg-white p-4 rounded shadow">
+                    <h3 class="text-xl font-semibold text-custom-orange">Art Science Festival</h3>
+                    <p class="text-gray-600">We share ICT skills and emerging technologies with our partner schools.</p>
+                </div>
+                <div class="bg-white p-4 rounded shadow">
+                    <h3 class="text-xl font-semibold text-custom-orange">Industry Attachment</h3>
+                    <p class="text-gray-600">We collaborate on projects with organisations with a social mission.</p>
+                </div>
+            </div>
+        </section>		
+    </main>
+
+    <footer class="bg-custom-teal text-white p-4 mt-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 ASRJC ICT Champions</p>
+        </div>
+    </footer>
+</body>
 </html>
