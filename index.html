@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ASRJC ICT Champions</title>
-    <title>ASRJC ICT Champions - Merged</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -19,12 +18,35 @@
         }
     </script>
     <style>
+	:root {
+            --custom-teal: #008080;
+            --custom-orange: #FFA500;
+        }
+        .bg-custom-teal {
+            background-color: var(--custom-teal);
+        }
+        .text-custom-teal {
+            color: var(--custom-teal);
+        }
+        .text-custom-orange {
+            color: var(--custom-orange);
+        }
+        .border-custom-teal {
+            border-color: var(--custom-teal);
+        }
+        .border-custom-orange {
+            border-color: var(--custom-orange);
+        }
+        .hover\:text-custom-orange:hover {
+            color: var(--custom-orange);
+        }
         .hover-title {
             transition: color 0.3s ease, text-decoration 0.3s ease; 
         }
 
         .hover-title:hover {
             color: #008080; 
+	    color: var(--custom-teal); 
             text-decoration: underline;
             cursor: pointer;
         }
