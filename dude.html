@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASRJC ICT Champions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'custom-orange': '#FF7F50',
+                        'custom-teal': '#008080',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hover-title {
+            transition: color 0.3s ease, text-decoration 0.3s ease; 
+        }
+
+        .hover-title:hover {
+            color: #008080; 
+            text-decoration: underline;
+            cursor: pointer;
+        }
+<style>
+    a:visited {
+        color: teal; /* Change this to your desired color */
+    }
+        .flip-card {
+            background-color: transparent;
+            width: 300px;
+            height: 400px;
+            perspective: 1000px;
+            margin: auto;
+        }
+
+        .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+        }
+
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .flip-card-front,
+        .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .flip-card-front {
+            background-color: white;
+            color: black;
+        }
+
+        .flip-card-back {
+            background-color: #FF7F50; 
+            color: white;
+            transform: rotateY(180deg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+</style>
+
+    </style>
+</head>
+<body class="bg-gray-100 font-sans">
+    <header class="bg-custom-teal text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-custom-orange">ASRJC ICT Champions</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#" class="hover:text-custom-orange">Home</a></li>
+                    <li><a href="#" class="hover:text-custom-orange">About</a></li>
+                    <li><a href="#" class="hover:text-custom-orange">Learn</a></li>
+                    <li><a href="#" class="hover:text-custom-orange">Serve</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto mt-8 p-4">
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold text-custom-teal mb-4">Good morning!</h2>
+            <p class="text-gray-700">The ASRJC ICT Champions programme is an initiative at Anderson Serangoon Junior College in Singapore, aimed at enhancing digital literacy among students. The programme provides students with opportunities to develop and apply their ICT skills through various activities and projects. ICT Champions act as peer leaders, guiding their schoolmates and participating in events that promote digital literacy skills across the college community. This role helps students gain valuable hard and soft skills as well as leadership abilities through experiential learning and service while contributing to the college's digital initiatives​.</p>
+        </section>
+
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-custom-teal mb-4">Learn</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div class="bg-white p-4 rounded shadow">
+                    <img src="https://i.ytimg.com/vi/wTgNP1LSVVI/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDHkO2ddgzrXCpN9T6MjKZ5vc0_UQ" alt="AI Python for Beginners Image" class="w-full h-48 object-cover mb-4 rounded">
+		    <h3 class="text-xl font-semibold text-custom-orange hover-title" style="text-align: center;">
+                        <a href="ai-python-for-beginners.html">AI Python for Beginners</a>
+                    </h3>
+		<p class="text-gray-600" style="font-size: 15px; text-align: center;">This short course is an introductory guide to using Python for AI development, covering essential Python programming concepts and libraries commonly used in AI. It is aimed at beginners with little or no prior coding experience.</p>
+                </div>
+                 <div class="bg-white p-4 rounded shadow">
+                    <img src="https://i.ytimg.com/vi/p1Vk3UljN3M/maxresdefault.jpg" alt="Generative AI for Everyone Image" class="w-full h-48 object-cover mb-4 rounded">
+                    <h3 class="text-xl font-semibold text-custom-orange hover-title" style="text-align: center;">
+                        <a href="generative-ai-for-everyone.html">Generative AI for Everyone</a>
+                    </h3>
+		    <p class="text-gray-600" style="font-size: 15px; text-align: center;">This course provides an accessible introduction to generative AI, covering how AI models like GPT and DALL-E work, and their applications in creative fields. It is suitable for a general audience interested in understanding the impact of generative AI.</p>
+                </div>
+                 <div class="bg-white p-4 rounded shadow">
+                    <img src="https://www.harvardonline.harvard.edu/sites/default/files/video_thumbnails/ib4NNsp2qW4.jpg" alt="CS50 Image" class="w-full h-48 object-cover mb-4 rounded">
+                    <h3 class="text-xl font-semibold text-custom-orange hover-title" style="text-align: center;">
+                        <a href="cs50-intro-to-cs.html">CS50 Introduction to Computer Science</a>
+                    </h3>
+		    <p class="text-gray-600" style="font-size: 15px; text-align: center;">This is an entry-level course that introduces the basics of computer science, covering topics like algorithms, data structures, and programming in multiple languages. It is designed for students with or without prior programming experience.</p>
+                </div>
+                <!-- Add other course divs here -->
+            </div>
+        </section>
+
+<section class="mb-12">
+    <h2 class="text-2xl font-bold text-custom-teal mb-4">Serve</h2>
+    <div class="bg-white p-4 rounded shadow">
+        <div class="flex flex-col md:flex-row gap-4">
+            <!-- Digital Literacy Outreach -->
+            <div class="flex-1 bg-gray-50 p-4 rounded shadow hover:bg-teal-100 transition duration-300">
+                <h3 class="text-xl font-semibold text-custom-teal">Digital Literacy Outreach</h3>
+                <p class="text-gray-600">
+                    This year, our ICT champions participated in the Singapore NDE 2024 programme, learning modules about Big Data and Cloud Computing!
+                </p>
+                <p class="text-l font-semibold text-custom-teal mt-4">FIND OUT MORE ABOUT NDE:</p>
+                <div class="flex flex-col">
+                    <a href="https://icdl.org/insights/big-data/" class="text-custom-teal underline hover:text-teal">Big Data</a>
+                    <a href="https://icdl.org/insights/cloud-computing/" class="text-custom-teal underline hover:text-teal">Cloud Computing</a>
+                </div>
+            </div>
+
+            <!-- Art Science Festival -->
+            <div class="flex-1 bg-gray-50 p-4 rounded shadow hover:bg-orange-100 transition duration-300">
+                <h3 class="text-xl font-semibold text-custom-orange">Art Science Festival</h3>
+                <p class="text-gray-600">We share ICT skills and emerging technologies with JC1 students, partner secondary school students, and teachers. We also participate in the International Elementz Fair to encourage STEM innovations!</p>
+                <p class="text-l font-semibold text-custom-orange mt-4">FIND OUT MORE ABOUT ASFEST:</p>
+                <div class="flex flex-col">
+                    <a href="https://www.asrjc.moe.edu.sg/open-house-2024/specialprog/" class="text-custom-orange underline hover:text-teal">ART SCIENCE FESTIVAL</a>
+                    <a href="https://www.asrjc.moe.edu.sg/special-programmes/elementz-international-science-research-conference-and-exhibition/" class="text-custom-orange underline hover:text-teal">INTERNATIONAL ELEMENTZ FAIR</a>
+                </div>
+            </div>
+
+            <!-- Industry Attachment -->
+            <div class="flex-1 bg-gray-50 p-4 rounded shadow hover:bg-teal-100 transition duration-300">
+                <h3 class="text-xl font-semibold text-custom-teal">Industry Attachment</h3>
+                <p class="text-gray-600">We collaborate on projects with organisations with a social mission.</p>
+            </div>
+        </div>
+
+        <!-- Hacktoberfest -->
+        <div class="flex-1 bg-gray-50 p-4 rounded shadow hover:bg-orange-100 transition duration-300 mt-4">
+            <h3 class="text-xl font-semibold text-custom-orange">
+                <a href="https://hacktoberfest.com" class="hover:text-teal">Hacktoberfest</a>
+            </h3>
+            <p class="text-gray-600">
+                We learn about and contribute to the global open source movement to promote openness and a love for sharing and collaborating. In fact, this website is a product of Hacktoberfest. :)
+            </p>
+            <p class="text-l font-semibold text-custom-orange mt-4">FIND OUT MORE ABOUT HACKTOBERFEST:</p>
+            <div class="flex flex-col">
+                <a href="https://hacktoberfest.com/" class="text-custom-orange underline hover:text-teal">HACKTOBERFEST!</a>
+            </div>
+        </div>
+
+        <!-- Deepfake Workshop -->
+        <div class="flex-1 bg-gray-50 p-4 rounded shadow hover:bg-teal-100 transition duration-300 mt-4">
+            <h3 class="text-xl font-semibold text-custom-teal">Deepfake Workshop</h3>
+            <p class="text-gray-600">Our dedicated JC2s have conducted workshops on deepfake to spread awareness of how to prevent misinformation and its negative impacts. Try making one of the deepfake videos now!</p>
+            <p class="text-l font-semibold text-custom-teal mt-4">CLICK HERE TO CREATE A DEEPFAKE:</p>
+            <div class="flex flex-col">
+                <a href="https://deepfakesweb.com/" class="text-custom-teal underline hover:text-teal">CREATE A DEEPFAKE!</a>
+            </div>
+        </div>
+
+        <!-- Cyberwellness Week -->
+        <div class="flex-1 bg-gray-50 p-4 rounded shadow hover:bg-orange-100 transition duration-300 mt-4">
+            <h3 class="text-xl font-semibold text-custom-orange">Cyberwellness Week</h3>
+            <p class="text-gray-600">The ICT Champions have organised some booth activities including quizzes and games to share more digital-related knowledge with their peers!</p>
+        </div>
+    </div>
+</section>
+
+ <section class="mb-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div class="bg-white p-4 rounded shadow">
+                    <h3 class="text-xl font-semibold text-custom-orange"><a href="https://hacktoberfest.com">Hacktoberfest</a></h3>
+					<p class="text-gray-600">We learn about and contribute to the global open source movement to promote openness and a love for sharing and collaborating. In fact, this website is a product of Hacktoberfest. :)</p>
+                </div>
+                <div class="bg-white p-4 rounded shadow">
+                    <h3 class="text-xl font-semibold text-custom-orange"></h3>
+					<p class="text-gray-600"></p>
+                </div>
+                <div class="bg-white p-4 rounded shadow">
+                    <h3 class="text-xl font-semibold text-custom-orange"></h3>
+					<p class="text-gray-600"></p>
+                </div>					
+            </div>
+        </section>	
+
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-custom-teal mb-4">People</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front bg-white p-4 rounded shadow">
+                            <h3 class="text-xl font-semibold text-custom-orange text-center">Choo Hom Da Gerrard</h3>
+                            <p class="text-gray-600 text-center">ICT Champion 24/25</p>
+			    <img src="https://files.oaiusercontent.com/file-rZJUwSCwblVrOjpKloZdr2Zz?se=2024-10-20T06%3A59%3A58Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D86bed61d-dffb-4ccf-ad81-aa325d19ab55.webp&sig=fhG4lMs5s7PLoT6cSFW4XRGJNAUB69hjWKuiUwkyXRY%3D" alt="Gerrard" class="w-full h-48 object-cover mb-4 rounded">
+                        </div>
+                        <div class="flip-card-back">
+                            <h3 class="text-xl font-semibold">About Gerrard</h3>
+                            <p>Gerrard is a key member of the ICT Champions, focusing on community outreach and digital literacy projects.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front bg-white p-4 rounded shadow">
+                            <h3 class="text-xl font-semibold text-custom-teal text-center">Tan Wei Qing</h3>
+                            <p class="text-gray-600 text-center">ICT Champion 24/25</p>
+			    <img src="https://files.oaiusercontent.com/file-vHZYSmUImBHsIk1Y2OzRwBbb?se=2024-10-20T07%3A04%3A29Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3Dbe9c84d0-849c-4268-97b5-dbcf2265fcb8.webp&sig=TIgBt02YWCO5UtiMwtEDDI9KxXhRcGhx2wtRszvtWqU%3D" alt="Wei Qing" class="w-full h-48 object-cover mb-4 rounded">
+                        </div>
+                        <div class="flip-card-back">
+                            <h3 class="text-xl font-semibold">About Wei Qing</h3>
+                            <p>Wei Qing specializes in programming and is passionate about teaching others about coding.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front bg-white p-4 rounded shadow">
+                            <h3 class="text-xl font-semibold text-custom-orange text-center">Tan Yi Ming Jaswain</h3>
+                            <p class="text-gray-600 text-center">ICT Champion 24/25</p>
+			    <img src="https://files.oaiusercontent.com/file-7My54jfjtthFBladKQFpqs5O?se=2024-10-20T07%3A09%3A14Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3Def39f864-99c8-42f2-88ad-813c02595730.webp&sig=jbd7gfAo6yZzN/eHnHXN48ycDHLr0PfYHPfU16Il4P0%3D" alt="Jaswain" class="w-full h-48 object-cover mb-4 rounded">
+                        </div>
+                        <div class="flip-card-back">
+                            <h3 class="text-xl font-semibold">About Jaswain</h3>
+                            <p>Jaswain is involved in various ICT projects and loves exploring new technologies.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-12 bg-white p-6 rounded-lg shadow-md">
+            <div>
+                <h3 class="text-2xl font-bold text-custom-teal mb-4">Teachers in charge</h3>
+                <ul class="list-disc list-inside space-y-2 text-gray-700">
+                    <li>Mr Oh Chee Tiong (HOD ICT, Physics)</li>
+                    <li>Ms Koh Wenting (SH ICT, Project Work)</li>
+                    <li>Mr Kenneth Khoo Jin Yee (Mathematics)</li>
+                    <li>Mr Gi Soong Chee (Computing)</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-custom-teal text-white p-4 mt-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 ASRJC ICT Champions</p>
+        </div>
+    </footer>
+</body>
+</html>
